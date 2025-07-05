@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- google icons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+     
+    <!-- style sheet -->
+    <link rel="stylesheet" href="src/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="container" class="main-container">
+        <h2 class="header">
+            To Do List 
+                <span class="material-symbols-outlined" id="todo-icon">
+                    priority
+                </span>
+        </h2>
+        <div id="add-task" class="add-task-container">
+            
+            <input type="text" class="task-field" name="addTask" placeholder="Tasks to be done...">
+            <button id="addBtn" class="btn">Add</button>
+            
+        </div>
+        <div id="task-info" class="task-info-container">
+            
+            <div class="task-div">
+                <!-- <span id="date" class="date-item">20 June 2025</span>
+                <div id="task-container" class="task-main-container">
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="study AJAX" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                                
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="complete todo list project" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="apply for companies" disabled>
+                        <div id="action-container" class="action-items">
+                                <button class="edit-btn">
+                                    <span class="material-symbols-outlined">
+                                    edit
+                                    </span>
+                                </button>
+                                <button class="delete-btn">
+                                    <span class="material-symbols-outlined">
+                                    delete
+                                    </span>
+                                </button>
+                                <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="Recall CSS" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="complete todo list project" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+
+            <!-- <div class="task-div">
+                <span id="date" class="date-item">20 June 2025</span>
+                <div id="task-container" class="task-main-container">
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="study AJAX" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                                
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="complete todo list project" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="apply for companies" disabled>
+                        <div id="action-container" class="action-items">
+                                <button class="edit-btn">
+                                    <span class="material-symbols-outlined">
+                                    edit
+                                    </span>
+                                </button>
+                                <button class="delete-btn">
+                                    <span class="material-symbols-outlined">
+                                    delete
+                                    </span>
+                                </button>
+                                <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="Recall CSS" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="complete todo list project" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="task-div">
+                <span id="date" class="date-item">20 June 2025</span>
+                <div id="task-container" class="task-main-container">
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="study AJAX" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                                
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="complete todo list project" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="apply for companies" disabled>
+                        <div id="action-container" class="action-items">
+                                <button class="edit-btn">
+                                    <span class="material-symbols-outlined">
+                                    edit
+                                    </span>
+                                </button>
+                                <button class="delete-btn">
+                                    <span class="material-symbols-outlined">
+                                    delete
+                                    </span>
+                                </button>
+                                <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="Recall CSS" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div id="task-items" class="taskItems-container">
+                        <input type="text" id="task-data" value="complete todo list project" disabled>
+                        <div id="action-container" class="action-items">
+                            <button class="edit-btn">
+                                <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                            </button>
+                            <button class="delete-btn">
+                                <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                            </button>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                
+            </div> -->
+        </div>
+    </div>
+
+    <script src="src/todo.js"></script>
+</body>
+</html>
