@@ -81,7 +81,7 @@ input.task-field {
     border-style: none;
     /* background-color: var(--darkblue); */
     color:var(--darkgrey);
-    min-width: 300px;
+    min-width: 200px;
 }
 
 .btn {
@@ -107,12 +107,13 @@ input.task-field {
 
 .task-div {
     background-color: var(--white);
+    /* width: 30%; */
     /* padding : 20px ; */
     border-radius: 20px;
     position: relative;
     display: flex;
     justify-content: center;
-    min-width: 350px;
+    /* min-width: 250px; */
 }
 
 .date-item {
@@ -131,8 +132,9 @@ input.task-field {
     /* background-color: aqua; */
     margin : 30px 20px;
     width: fit-content;
-    max-height: 210px;
+    max-height: 205px;
     overflow: auto;
+    min-width: 320px;
 }
 
 /* .task-main-container .taskItems-container:nth-child(even){
