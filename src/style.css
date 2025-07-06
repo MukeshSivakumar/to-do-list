@@ -26,7 +26,7 @@ body{
 }
 
 .main-container {
-    padding : 20px 40px;
+    padding : 20px 0px;
     /* background-color: #373b44; */
     width : 100%;
     height : 80%;
@@ -39,10 +39,10 @@ body{
 }
 
 .header {
-    width: fit-content;
+    width: 100%;
     position: fixed;
     top: 40px;
-    align-self: center;
+    text-align: center;
     font-size: 40px;
     color : #24243e;
     /* background: -webkit-linear-gradient(right,#0f0c29, #302b63, #24243e);
@@ -57,17 +57,17 @@ body{
     position: fixed;
     top: 42px;
     background-color: inherit;
-    align-self: center;
+    /* align-self: center; */
     font-size: 40px;
     color : #24243e;
-    margin-left: 10px;
+    /* margin-right: 10px; */
 }
 
 .add-task-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap : 10px;
+    /* gap : 10px; */
     position: fixed;
     top: 130px;
 }
@@ -80,7 +80,8 @@ input.task-field {
     /* box-shadow: none; */
     border-style: none;
     /* background-color: var(--darkblue); */
-    color:var(--darkgrey)
+    color:var(--darkgrey);
+    min-width: 300px;
 }
 
 .btn {
@@ -90,6 +91,7 @@ input.task-field {
     /* background-color: var(--darkblue); */
     background: var(--darkgrey);
     color: var(--white);
+    margin-left: 10px;
 }
 
 .task-field:focus {
@@ -110,6 +112,7 @@ input.task-field {
     position: relative;
     display: flex;
     justify-content: center;
+    min-width: 350px;
 }
 
 .date-item {
@@ -130,7 +133,6 @@ input.task-field {
     width: fit-content;
     max-height: 210px;
     overflow: auto;
-    
 }
 
 /* .task-main-container .taskItems-container:nth-child(even){
@@ -139,6 +141,8 @@ input.task-field {
 
 .action-items {
     display: inline-block;
+    /* width: 30%; */
+   
 }
 .action-items > button  {
     border-style: none;
@@ -197,6 +201,9 @@ input.task-field {
     margin : 20px;
     /* position:relative; */
     border-bottom: 1px solid var(--lightgrey);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     
 }
 
@@ -220,6 +227,7 @@ input.task-field {
     border-style: none;
     color: var(--darkgrey);
     font-weight: bolder;
+    /* width : 60%; */
 }
 
 .taskItems-container > input[type="text"]:focus {
